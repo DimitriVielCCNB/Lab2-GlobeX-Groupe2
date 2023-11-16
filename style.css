@@ -64,7 +64,7 @@ nav ul li a {
 }
 .sub-categories li:hover {
     background-color: #fff; /* Couleur de fond pour le survol des éléments des sous-catégories */
-    color: red; /* Couleur de texte pour le survol des éléments des sous-catégories */
+    color: brown; /* Couleur de texte pour le survol des éléments des sous-catégories */
     font-size: 14px; /* Taille de la police des éléments des sous-catégories */
     margin-bottom: 20px; /* Ajout de marge entre les éléments des sous-catégories */
 }
