@@ -43,7 +43,7 @@ nav ul li {
     border:none;
     padding: 10px;
     width: 200px; /* Largeur des sous-catégories */
-    height: 100px;
+    height: 50px;
 }
 
 .sub-categories li {
