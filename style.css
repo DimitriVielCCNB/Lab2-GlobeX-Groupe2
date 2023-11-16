@@ -53,7 +53,7 @@ nav ul li {
 }
 
 nav ul li:hover .sub-categories {
-    color: brown;
+    /*color: brown;*/
     display: block; /* Afficher les sous-catégories au survol */
 }
 
@@ -64,7 +64,7 @@ nav ul li a {
 }
 .sub-categories li:hover {
     background-color: #fff; /* Couleur de fond pour le survol des éléments des sous-catégories */
-    color: brown; /* Couleur de texte pour le survol des éléments des sous-catégories */
+    /*color: white; /* Couleur de texte pour le survol des éléments des sous-catégories */
     font-size: 14px; /* Taille de la police des éléments des sous-catégories */
     margin-bottom: 20px; /* Ajout de marge entre les éléments des sous-catégories */
 }
@@ -80,6 +80,10 @@ nav ul li:hover a {
 
 section {
     padding: 20px;
+    /*position:relative;*/
+    text-align: center;
+    /*align-items: center;*/
+
 }
 
 footer {
@@ -118,7 +122,11 @@ footer {
 
 .my-list a {
     text-decoration: none;
-    color: white;
+    color: white; 
+}
+
+.my-list a:hover {
+    color: brown; 
 }
 
 /* Ajouter une classe pour le style des <ol> */
@@ -130,7 +138,6 @@ footer {
 .my-ol li {
     margin-top: 5px; /* Espacement entre les éléments de la liste */
 }
-
 
 
 
