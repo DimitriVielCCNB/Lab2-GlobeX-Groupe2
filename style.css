@@ -1,1 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Fond gris-clair */
+}
+
+header {
+    background-color: #333; /* Couleur foncée pour l'en-tête */
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Positionner le logo au-dessus de la navigation */
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%; /* Assure que le logo ne dépasse pas sa largeur naturelle */
+    max-height: 200px; /* Ajoutez cette ligne pour définir la hauteur maximale du logo */
+    height: auto; /* Permet au logo de conserver ses proportions tout en ajustant sa largeur */
+    margin-bottom: 10px; /* Ajouter de l'espace entre le logo et la navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Ajustement pour centrer la navigation horizontalement */
+}
+
+nav ul li {
+    position: relative; /* Ajout d'une position relative pour positionner les sous-catégories */
+    margin-right: 20px;
+}
+
+.sub-categories {
+    display: none; /* Masquer les sous-catégories par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Couleur de fond pour les sous-catégories */
+    border:none;
+    padding: 10px;
+    width: 200px; /* Largeur des sous-catégories */
+    height: 100px;
+}
+
+.sub-categories li {
+    font-size: 14px; /* Taille de la police des éléments des sous-catégories */
+    margin-bottom: 20px; /* Ajout de marge entre les éléments des sous-catégories */
+    color: white /* Couleur du texte des sous-catégories */
+}
+
+nav ul li:hover .sub-categories {
+    color: brown;
+    display: block; /* Afficher les sous-catégories au survol */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s; /* Transition de couleur pour un effet fluide */
+}
+.sub-categories li:hover {
+    background-color: #fff; /* Couleur de fond pour le survol des éléments des sous-catégories */
+    color: red; /* Couleur de texte pour le survol des éléments des sous-catégories */
+    font-size: 14px; /* Taille de la police des éléments des sous-catégories */
+    margin-bottom: 20px; /* Ajout de marge entre les éléments des sous-catégories */
+}
+
+nav ul li:hover .sub-categories {
+    background-color: #333; /* Couleur de fond pour le survol des sous-catégories */
+}
+
+nav ul li:hover a {
+    /*text-decoration: none;*/
+    color: brown;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Utiliser flexbox en colonne */
+    align-items: center;
+}
+
+.my-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.my-ol-container {
+    margin-top: 10px; /* Ajout de marge en haut pour séparer les listes */
+}
+.my-list,
+.my-ol li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utiliser flexbox pour mettre la liste sur une seule ligne */
+}
+
+.my-list li,
+.my-ol li{
+    margin-right: 20px;
+}
+
+.my-list a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Ajouter une classe pour le style des <ol> */
+.my-ol {
+    list-style-type: none;
+  
+}
+
+.my-ol li {
+    margin-top: 5px; /* Espacement entre les éléments de la liste */
+}
+
+
+
 
