@@ -1,0 +1,137 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <title>living-room</title>
+    <style>
+        /* Style pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif; /* Police de caractères générale */
+            margin: 0; /* Réinitialisation de la marge par défaut du corps de la page */
+            padding: 0; /* Réinitialisation du rembourrage par défaut du corps de la page */
+            background-color: #f4f4f4; /* Couleur de fond générale */
+        }
+
+        /* Style pour la section principale de la page */
+        section {
+            max-width: 800px; /* Largeur maximale de la section */
+            margin: 20px auto; /* Marge extérieure et centrage horizontal de la section */
+            padding: 20px; /* Espace intérieur de la section */
+            background-color: #fff; /* Couleur de fond de la section */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour de la section */
+            display: grid; /* Utilisation du modèle de disposition en grille pour la section */
+            grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales dans la grille */
+            grid-gap: 20px; /* Espace entre les éléments de la grille */
+        }
+
+        /* Style pour chaque produit dans la section */
+        .product {
+            border: 1px solid #ddd; /* Bordure du produit */
+            margin: 10px; /* Marge extérieure du produit */
+            padding: 10px; /* Espace intérieur du produit */
+            text-align: center; /* Alignement du texte au centre dans le produit */
+        }
+
+        /* Style pour les images de chaque produit */
+        .product img {
+            max-width: 100%; /* Assure que l'image du produit ne dépasse pas sa largeur naturelle */
+            height: auto; /* Permet à l'image de conserver ses proportions tout en ajustant sa largeur */
+        }    
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\logo.png" alt="Logo GlobeX">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a>Indoor</a>
+                    <ul class="sub-categories">
+                        <li><a href="living-room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Outdoor</a>
+                    <ul class="sub-categories">
+                        <li><a href="garden.html">Garden</a></li>
+                        <li><a href="patio.html">Patio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Sports</a>
+                    <ul class="sub-categories">
+                        <li><a href="football.html">Football</a></li>
+                        <li><a href="basketball.html">Basketball</a></li>
+                    </ul> 
+                </li> 
+                <li><a href="radioactive.html">Radioactive</a></li>
+                <li><a href="world_domination.html">World_domination</a></li>
+                <li><a href="commercial_properties">Commercial_properties</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="mailing_list.html">Mailing List</a></li>
+                <li><a href="about.html">about Us</a></li>
+            </ul>
+        </nav>
+    </header>       
+
+    <section>
+        <div class="product">
+            <img src="image\patio1.jpg" alt="Patio1">
+            <h2>PURPLE LEAF 12' X 16' Outdoor Hardtop Gazebo</h2>
+            
+            <p>Price : $1999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\Patio2.jpg" alt="Patio2">
+            <h2>PURPLE LEAF 10' X 12' Outdoor Hardtop Gazebo for Patio Galvanized Steel Double Roof Permanent </h2>
+            <p>Price : $1399</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\patio3.jpg" alt="Patio3">
+            <h2>Backyard Discovery Arcadia 12 x 9.5 All Cedar Wooden Gazebo Pavilion with Hard Top Steel Slope Roof, Durable, Supports Snow Loads and Wind Speed, Rot Resistant</h2>
+           
+            <p>Price : $1999.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\patio4.jpg" alt="Patio4">
+            <h2>The flickering light and sound of a fire adds instant coziness as well. I love the look of this stone stone firepit. It would be perfect for making s’mores with the family, or keeping warm in those winter months.</h2>
+            
+            <p>Price : $2999.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="fixed" > 
+            <div class="my-list-container">
+                <ul class="my-list">
+                    <li><a href="mailing_list.html">Receive your catalogs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="my-ol-container">         
+                <ol class="my-ol"> 
+                    <li>ALL RIGHTS RESERVED © GlobeX.</li>
+                    <li> UPDATED 2023</li>
+                </ol>
+            </div>
+    </div>
+    </footer>
+
+</body>
+</html>

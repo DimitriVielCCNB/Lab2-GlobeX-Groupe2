@@ -129,3 +129,9 @@ footer {
 .my-ol li {
     margin-top: 5px; /* Espacement entre les éléments de la liste ordonnée */
 }
+
+#mailing_list {
+
+     text-align: center;
+
+}
