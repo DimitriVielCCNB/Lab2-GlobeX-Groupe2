@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>GlobeX</title>
+
+    <style>
+        *{ /*style generale de la page*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px ;
+            display: flex; /* alignement horizontal*/
+            flex-direction: column; /* alignement vertical*/
+            background:#dcdee0;
+            width: 100%;
+        
+        }
+        .contact .content{
+            max-width: 800px; 
+            text-align: center; /* centrer le texte*/
+        }
+        .contact .content h1 {
+            font-size: 36px;
+            font-weight: 500px;/* grosseur du texte*/
+            font-size: 60px; /* taile du texte*/
+            color: #0e0f0ee8;
+            text-align: center;
+        
+        }
+        .contact .content p {
+            font-weight: 300px; /*grosseure du paragraphe*/
+            color: #0e0e0e;
+            text-align: center; 
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px; /* espacement du haut*/
+        }
+        .container .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column; /* alignement verticale*/
+
+        }
+        .container .contactInfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .container .contactInfo .box .icon{
+            min-width: 60px;
+            height: 60px;
+            background: #e5c005;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 30px;
+        }
+        .container .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #121111;
+            flex-direction: column;
+            font-weight: 400px;
+        }
+        .container .contactInfo .box .text h3{
+            font-weight: 600px;
+            color: #f1d206;
+        }
+        @media screen and (max-width:700px){
+        .contact{
+            width: 100%;
+        }  
+        }
+        h2{ 
+            color: #0b07e3;
+            padding: 20px;
+            padding-top: 10px;
+            margin-left: 20%;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        input{
+            background-color: aliceblue;
+            width: 70%;
+            font-size: 20px;
+            padding: 20px 20px;
+            border-radius: 10px;
+            border-color: #0d0d0df4;
+            margin-bottom: 20px;
+            margin-right: -5%;
+        }
+    textarea {
+        background-color: aliceblue;
+        width: 70%;
+        margin-bottom: 12%;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border-color: #ebd408;
+        margin-bottom: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-right: 12%;
+    }
+    input:focus-within{ /* have a focus on area*/
+        outline:none;
+        border-color: #f1d206;
+        border-width: 3px;
+    }
+
+    button{
+        background-color: #f1d206;
+        border-radius: 20px;
+        border-color: #060616;
+        font-size: 22px;
+        padding: 10px 18px;
+        display: flex;
+        margin-left: 20%;
+    }
+     button:hover {
+        opacity: 80%;
+        cursor: pointer;
+     }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\logo.png" alt="Logo GlobeX">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>
+                    <a>Indoor</a>
+                    <ul class="sub-categories">
+                        <li><a href="living-room.html">Living Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Outdoor</a>
+                    <ul class="sub-categories">
+                        <li><a href="garden.html">Garden</a></li>
+                        <li><a href="patio.html">Patio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Sports</a>
+                    <ul class="sub-categories">
+                        <li><a href="football.html">Football</a></li>
+                        <li><a href="basketball.html">Basketball</a></li>
+                    </ul> 
+                </li> 
+                <li><a href="radioactive.html">Radioactive</a></li>
+                <li><a href="world_domination.html">World_domination</a></li>
+                <li><a href="commercial_properties.html">Commercial_properties</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="mailing_list.html">Mailing List</a></li>
+                <li><a href="about.html">about Us</a></li>
+            </ul>
+        </nav>
+    </header>       
+    <main>
+        <div class="contact">
+            <div class="content">
+                <h1>CONTACT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, corrupti sapiente repudiandae est numquam, laboriosam aut id, 
+                voluptatem cupiditate quas atque minus repellendus dicta? Iste deserunt totam sint tempora mollitia.</p>
+            </div>
+            <div class="container">
+                 <div class="contactInfo">
+                    <div class="box">
+                         <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p> 15201 Maple system Road, cypress Creek, 92688 US</p>
+                            </div>
+                    </div>
+                    <div class="box">
+                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p> 1 (555)555-5555</p>
+                            </div>
+                    </div>
+                     <div class="box">
+                         <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>info@globex.com </p>
+                            </div>
+                    </div>
+                </div>
+            <div>
+                <h2>Contact Form</h2>
+                <form action="submit_form.php" method="post">
+                <input type="text" name="First" placeholder="firstName" autocomplete="off" required>
+                <input type="text" name="Last" placeholder="LastName" autocomplete="off" required>
+                <input type="email" name="email" placeholder="email" autocomplete="off" required>
+                <textarea rows="5" cols="60 " name="message"  placeholder="enter text" autocomplete="off" required></textarea>
+                
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <div class="fixed" > 
+            <div class="my-list-container">
+                <ul class="my-list">
+                    <li><a href="mailing_list.html">Receive your catalogs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="my-ol-container">         
+                <ol class="my-ol"> 
+                    <li>ALL RIGHTS RESERVED © GlobeX.</li>
+                    <li> UPDATED 2023</li>
+                </ol>
+            </div>
+    </div>
+    </footer>
+</body>
+
+</html>
+
