@@ -139,5 +139,16 @@ footer {
     margin-top: 5px; /* Espacement entre les éléments de la liste */
 }
 
+#about { 
+    text-align: center;
+    color: black;
 
+
+}
+
+#frmContact {
+
+    text-align: center;     /*centrer mon formulaire */
+    margin-bottom: 10px;
+}
 
