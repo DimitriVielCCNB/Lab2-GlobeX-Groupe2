@@ -27,20 +27,22 @@ nav ul {
     padding: 10px; /* Espace intérieur de la liste de navigation */
     display: flex; /* Utilisation de flexbox pour le positionnement des éléments enfants */
     justify-content: center; /* Ajustement pour centrer la navigation horizontalement */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments lorsqu'ils ne rentrent pas */
 }
 
 nav ul li {
     position: relative; /* Ajout d'une position relative pour positionner les sous-catégories */
     margin-right: 20px; /* Espace entre les éléments de la liste de navigation */
+    margin-bottom: 10px; /* Espace entre les éléments de la liste de navigation */
 }
 
 .sub-categories {
     display: none; /* Masquer les sous-catégories par défaut */
-    position: absolute;
+    position: relative; /* Position relative pour les sous-catégories par rapport à leur parent */
     background-color: #333; /* Couleur de fond pour les sous-catégories */
-    border:none; /* Supprime la bordure des sous-catégories */
+    border: none; /* Supprime la bordure des sous-catégories */
     padding: 10px; /* Espace intérieur des sous-catégories */
-    width: 200px; /* Largeur des sous-catégories */
+    width: 100px; /* Largeur des sous-catégories */
 }
 
 .sub-categories li {
@@ -50,12 +52,13 @@ nav ul li {
 }
 
 nav ul li:hover .sub-categories {
-    display: block; /* Afficher les sous-catégories au survol */
+    display: contents; /* Afficher les sous-catégories au survol */
+    position: absolute; /* Position absolue par rapport au parent lorsqu'il est survolé */
 }
 
 nav ul li a {
     text-decoration: none; /* Supprimer la décoration de texte des liens de navigation */
-    color:white; /* Couleur du texte des liens de navigation */
+    color: white; /* Couleur du texte des liens de navigation */
     transition: color 0.3s; /* Transition de couleur pour un effet fluide */
 }
 
@@ -79,7 +82,7 @@ section {
 }
 
 footer {
-    position:relative; /* Positionnement relatif du pied de page par rapport à son conteneur parent */
+    position: relative; /* Positionnement relatif du pied de page par rapport à son conteneur parent */
     bottom: 0; /* Alignement du bas du pied de page au bas de son conteneur parent */
     width: 100%; /* Largeur maximale du pied de page */
     background-color: #333; /* Couleur de fond du pied de page */
@@ -89,6 +92,7 @@ footer {
     display: flex; /* Utilisation de flexbox pour le positionnement des éléments enfants */
     flex-direction: column; /* Alignement vertical des éléments enfants */
     align-items: center; /* Centrage horizontal des éléments enfants */
+    margin-top: auto; /* Laisse l'espace disponible au-dessus du pied de page */
 }
 
 .my-list-container {
@@ -130,8 +134,19 @@ footer {
     margin-top: 5px; /* Espacement entre les éléments de la liste ordonnée */
 }
 
-#mailing_list {
+#complexe img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Permet à l'image de conserver ses proportions tout en ajustant sa largeur */
+}
 
-     text-align: center;
+@media screen and (max-width: 600px) {
+    /* Styles spécifiques pour les écrans de 600 pixels de large ou moins */
+    nav ul {
+        flex-direction: column; /* Affiche les éléments de la liste verticalement */
+        align-items: center; /* Centre les éléments de la liste horizontalement */
+    }
 
+    nav ul li {
+        margin-right: 0; /* Supprime la marge entre les éléments de la liste */
+    }
 }
