@@ -7,18 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <title>GlobeX</title>
-<style>
-    .imgage {
-        text-align: center;
-        border-radius: 5px yellow;
-        margin-top: 10px;
-    }
-    #principale {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-       
-}
-</style>    
+    <style>
+        /* Style pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif; /* Police de caractères générale */
+            margin: 0; /* Réinitialisation de la marge par défaut du corps de la page */
+            padding: 0; /* Réinitialisation du rembourrage par défaut du corps de la page */
+            background-color: #f4f4f4; /* Couleur de fond générale */
+        }
+
+        /* Style pour la section principale de la page */
+        section {
+            max-width: 800px; /* Largeur maximale de la section */
+            margin: 20px auto; /* Marge extérieure et centrage horizontal de la section */
+            padding: 20px; /* Espace intérieur de la section */
+            background-color: #fff; /* Couleur de fond de la section */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour de la section */
+            display: grid; /* Utilisation du modèle de disposition en grille pour la section */
+            grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales dans la grille */
+            grid-gap: 20px; /* Espace entre les éléments de la grille */
+        }
+
+        /* Style pour chaque produit dans la section */
+        .product {
+            border: 1px solid #ddd; /* Bordure du produit */
+            margin: 10px; /* Marge extérieure du produit */
+            padding: 10px; /* Espace intérieur du produit */
+            text-align: center; /* Alignement du texte au centre dans le produit */
+        }
+
+        /* Style pour les images de chaque produit */
+        .product img {
+            max-width: 100%; /* Assure que l'image du produit ne dépasse pas sa largeur naturelle */
+            height: auto; /* Permet à l'image de conserver ses proportions tout en ajustant sa largeur */
+        }    
+    </style>
    
 </head>
 
@@ -65,43 +88,39 @@
         </nav>
     </header>       
 
-        <main>
-                <h1>Page Football</h1>
-            
-                    <h2>Produits</h2>
-                    <p>Voici quelques produits que vous pouvez utiliser pour jouer au football :</p>
+
+    <section>
+        <div class="product">
+            <img src="image\ballon.jpeg" alt="ballon">
+            <p>Price : $35</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\chaussure.jpeg" alt="">
+            <p>Price : $140</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image\chaussure1.jpeg" alt="">
+            <p>Price : $135</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image\maillot1.jpg" alt="">
+            <p>Price : $125</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image\maillot2.jpg" alt="">
+            <p>Price : $190</p>
+            <button>Add to Cart</button>
+        </div>
+        <li>Protège-tibias En rupture de stock</li>
+        
+        </div>
+    </section>
               
-         <ul>
-            <div id="principale">
-                    <div class="image">
-                        <li>Ballon de football</li>
-                            <img src="image/ballon.jpeg" alt="simpsoms">
-                            <p>price:$100<br/> </p>
-                            </div>
-                    <div class="image">   
-                        <li>Chaussures de football</li>
-                            <img src="image/chaussure.jpeg" alt="simpsoms" wihth="300" height="200" >
-                            <p>price:$100<br/> </p>
-                            <img src="image/chaussure1.jpeg" alt="simpsoms" wihth="300" height="200">
-                            <p>price:$105<br/> </p>
-                    
-                            </div>
-                    <div class="image">
-                        <li>Maillot de football</li>
-                            <img src="image/maillot1.jpg" alt="simpsoms" wihth="300" height="200" >
-                            <p>price:$60<br/> </p>
-                            <img src="image/maillot2.jpg" alt="simpsoms" wihth="300" height="200" >
-                            <p>price:$60<br/> </p>
-                    </div>
-                    <div class="image">
-                        <li>Protège-tibias</li>
-                            <p> En rupture de stock</p>
-                    </div>
-                </div>
-            </ul>
-               
-        </main>
-          
     </header>     
     <footer>
         <!-- Ajoutez ici des informations supplémentaires ou des liens vers les médias sociaux, par exemple -->
