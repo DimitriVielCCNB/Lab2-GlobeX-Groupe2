@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <title>GlobeX</title>
+
+    <style>
+        /* Style pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif; /* Police de caractères générale */
+            margin: 0; /* Réinitialisation de la marge par défaut du corps de la page */
+            padding: 0; /* Réinitialisation du rembourrage par défaut du corps de la page */
+            background-color: #f4f4f4; /* Couleur de fond générale */
+        }
+
+        /* Style pour la section principale de la page */
+        section {
+            max-width: 800px; /* Largeur maximale de la section */
+            margin: 20px auto; /* Marge extérieure et centrage horizontal de la section */
+            padding: 20px; /* Espace intérieur de la section */
+            background-color: #fff; /* Couleur de fond de la section */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère autour de la section */
+            display: grid; /* Utilisation du modèle de disposition en grille pour la section */
+            grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales dans la grille */
+            grid-gap: 20px; /* Espace entre les éléments de la grille */
+        }
+
+        /* Style pour chaque produit dans la section */
+        .product {
+            border: 1px solid #ddd; /* Bordure du produit */
+            margin: 10px; /* Marge extérieure du produit */
+            padding: 10px; /* Espace intérieur du produit */
+            text-align: center; /* Alignement du texte au centre dans le produit */
+        }
+
+        /* Style pour les images de chaque produit */
+        .product img {
+            max-width: 100%; /* Assure que l'image du produit ne dépasse pas sa largeur naturelle */
+            height: auto; /* Permet à l'image de conserver ses proportions tout en ajustant sa largeur */
+        }    
+    </style>
 </head>
 
 <body>
@@ -16,30 +52,29 @@
             <!-- Ajoutez ici le lien vers votre logo--> 
         </div>
         <nav>
+            
+    
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li>
-                    <a href="#indoor">Indoor</a>
+                    <a>Indoor</a>
                     <ul class="sub-categories">
                         <li><a href="living-room.html">Living Room</a></li>
                         <li><a href="bedroom.html">Bedroom</a></li>
-                        <!-- Ajoutez autant de sous-catégories que nécessaire -->
                     </ul>
                 </li>
                 <li>
-                    <a href="#outdoor">Outdoor</a>
+                    <a>Outdoor</a>
                     <ul class="sub-categories">
                         <li><a href="garden.html">Garden</a></li>
                         <li><a href="patio.html">Patio</a></li>
-                        <!-- Ajoutez autant de sous-catégories que nécessaire -->
                     </ul>
                 </li>
                 <li>
-                    <a href="#sports">Sports</a>
+                    <a>Sports</a>
                     <ul class="sub-categories">
                         <li><a href="football.html">Football</a></li>
                         <li><a href="basketball.html">Basketball</a></li>
-                        <!-- Ajoutez autant de sous-catégories que nécessaire --> 
                     </ul> 
                 </li> 
                 <li><a href="radioactive.html">Radioactive</a></li>
@@ -53,31 +88,46 @@
     </header>       
 
         
-    <main>
-        
-         <section> 
-            <h2>Produits</h2> 
-            <p>Voici quelques produits pour le jardinage :</p> 
-            <ul> 
-                <li>Graines de fleurs et de légumes</li> <br>
-                <img src="image/semence.jpeg" alt="simpsoms" wihth="300" height="300" >
-                <p>price:$15</p><br/><br/>
-                <img src="image/semence1.jpeg" alt="simpsoms" wihth="300" height="300" >
-                <p>price:$100<br/> </p><br/>
-                <li>Outils de jardinage </li> <br>
-                <img src="image/outils.jpg" alt="simpsoms" wihth="300" height="300" >
-                 <p>price:$25 chaque <br/> </p><br/>
+    <section>
+        <div class="product">
+            <img src="image\semence.jpeg" alt="Semence">
+            <h2>PURPLE LEAF 12' X 16' Outdoor Hardtop Gazebo</h2>
+            
+            <p>Price : $1999</p>
+            <button>Add to Cart</button>
+        </div>
 
-                 <li>Pots de fleurs et bacs de jardinage</li> <br>
-                
-                 <img src="image/pot.jpeg" alt="simpsoms" wihth="300" height="300" >
-                 <img src="image/pot1.jpeg" alt="simpsoms" wihth="300" height="300" >
-                 <img src="image/pot2.jpeg" alt="simpsoms" wihth="300" height="300" >
-                 <img src="image/pot3.jpeg" alt="simpsoms" wihth="300" height="300" >
-                 <p>price:$30 chaque pot<br/> </p><br/>
+        <div class="product">
+            <img src="image\semence1.jpeg" alt="Semence1">
+            <h2>PURPLE LEAF 10' X 12' Outdoor Hardtop Gazebo for Patio Galvanized Steel Double Roof Permanent </h2>
+            <p>Price : $1399</p>
+            <button>Add to Cart</button>
+        </div>
 
-            </ul> 
-    </main> 
+        <div class="product">
+            <img src="image\pot1.jpeg" alt="Pot">
+            <h2>Backyard Discovery Arcadia 12 x 9.5 All Cedar Wooden Gazebo Pavilion with Hard Top Steel Slope Roof, Durable, Supports Snow Loads and Wind Speed, Rot Resistant</h2>
+           
+            <p>Price : $1999.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\pot.jpeg" alt="Pot1">
+            <h2>The flickering light and sound of a fire adds instant coziness as well. I love the look of this stone stone firepit. It would be perfect for making s’mores with the family, or keeping warm in those winter months.</h2>
+            
+            <p>Price : $2999.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image\pot.jpeg" alt="Pot1">
+            <h2>The flickering light and sound of a fire adds instant coziness as well. I love the look of this stone stone firepit. It would be perfect for making s’mores with the family, or keeping warm in those winter months.</h2>
+            
+            <p>Price : $2999.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
              
     <footer>
         <!-- Ajoutez ici des informations supplémentaires ou des liens vers les médias sociaux, par exemple -->
