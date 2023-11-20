@@ -61,6 +61,10 @@ nav ul li a {
     color: white; /* Couleur du texte des liens de navigation */
     transition: color 0.3s; /* Transition de couleur pour un effet fluide */
 }
+a:hover {
+    background: rgb(170, 121, 30);  /* ajouter une surbrillance au niveau des elements du menu */
+
+}
 
 .sub-categories li:hover {
     background-color: #fff; /* Couleur de fond pour le survol des éléments des sous-catégories */
