@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <title>GlobeX</title>
+<style>
+    .imgage {
+        text-align: center;
+        border-radius: 5px yellow;
+        margin-top: 10px;
+    }
+    #principale {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+}
+</style>    
    
 </head>
 
@@ -56,32 +68,37 @@
         <main>
                 <h1>Page Football</h1>
             
-                <section>
                     <h2>Produits</h2>
                     <p>Voici quelques produits que vous pouvez utiliser pour jouer au football :</p>
               
          <ul>
-                    <div class="image-container">
+            <div id="principale">
+                    <div class="image">
                         <li>Ballon de football</li>
                             <img src="image/ballon.jpeg" alt="simpsoms">
                             <p>price:$100<br/> </p>
+                            </div>
+                    <div class="image">   
                         <li>Chaussures de football</li>
-                            <img src="image/chaussure.jpeg" alt="simpsoms" wihth="300" height="300" >
+                            <img src="image/chaussure.jpeg" alt="simpsoms" wihth="300" height="200" >
                             <p>price:$100<br/> </p>
-                            <img src="image/chaussure1.jpeg" alt="simpsoms" wihth="300" height="300">
+                            <img src="image/chaussure1.jpeg" alt="simpsoms" wihth="300" height="200">
                             <p>price:$105<br/> </p>
-                            <img src="image/chaussure3.jpg" alt="simpsoms" wihth="300" height="300" >
+                            <img src="image/chaussure3.jpg" alt="simpsoms" wihth="300" height="200" >
                             <p>price:$110<br/> </p>
+                            </div>
+                    <div class="image">
                         <li>Maillot de football</li>
-                            <img src="image/maillot.jpeg" alt="simpsoms" wihth="300" height="300" >
+                            <img src="image/maillot1.jpg" alt="simpsoms" wihth="300" height="200" >
                             <p>price:$60<br/> </p>
-                            <img src="image/maillot1.jpg" alt="simpsoms" wihth="300" height="300" >
+                            <img src="image/maillot2.jpg" alt="simpsoms" wihth="300" height="200" >
                             <p>price:$60<br/> </p>
-                            <img src="image/maillot2.jpg" alt="simpsoms" wihth="300" height="300" >
-                            <p>price:$60<br/> </p>
+                    </div>
+                    <div class="image">
                         <li>Protège-tibias</li>
                             <p> En rupture de stock</p>
                     </div>
+                </div>
             </ul>
                 </section>
         </main>
